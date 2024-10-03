@@ -6,10 +6,9 @@
             "use": "@vercel/node"
         }
     ],
-    "routes":[
-        {
-            "src": "/(.*)",
-            "dest":"/"
-        }
+    "routes": [
+        { "src": "/file/(.*)", "dest": "/file/$1" },
+        { "src": "/edit/(.*)", "dest": "/edit/$1" },
+        { "src": "/(.*)", "dest": "/" }
     ]
 }
